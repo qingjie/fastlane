@@ -1,0 +1,21 @@
+Duplicate Target
+
+Single Click on new Target and Press Return; type new ID and press Return.
+
+Build Settings > Product Name - Set this to the <BookID>.
+
+Build Settings > Info.plist File - Change to RetrieveApp/Configs/<ID>-Info.plist
+
+Delete “<someID> copy-Info.plist” from project (and Trash) that will get automatically added to the project.
+
+Drag in new <BookID>.plist and <BookID>-Info.plist files into “Supporting Files/Configs”.
+- <BookID>-Info.plist does NOT get added to any target, but the <BookID>.plist file should be added to just the “<BookID>” target that you created.
+
+Manage Schemes
+
+Make sure <BookID> Scheme points at the right <BookID>.app
+
+
+
+Aggregate build can be Archived to build & archive all dependent targets. Can have as many aggregate targets as you like.
+
